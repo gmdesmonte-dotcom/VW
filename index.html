@@ -2,287 +2,314 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>VW Auto Peças 3 — Peças Usadas com Garantia</title>
-<meta name="description" content="VW Auto Peças 3 — Peças automotivas usadas, revisadas e garantidas. Atendimento profissional, estoque amplo e envio para todo o Brasil.">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17550642102"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  gtag('config', 'AW-17550642102');
-</script>
+<title>VW Auto Peças 3 | Peças Automotivas com Garantia</title>
+<meta name="description" content="Peças automotivas usadas revisadas com garantia. Envio para todo o Brasil. Atendimento rápido via WhatsApp.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-:root{
-  --bg:#f6f7f9;
-  --surface:#ffffff;
-  --muted:#6b7280;
-  --accent:#0b2340;
-  --accent-2:#1E3A8A;
-  --red:#e22b2b;
-  --radius:12px;
-  --maxw:1200px;
-  --shadow: 0 6px 20px rgba(16,24,40,0.08);
-  --hero-height:320px; /* altura do banner */
-}
-
-*{box-sizing:border-box}
-html,body{height:100%}
 body{
   margin:0;
-  font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
-  background:var(--bg);
-  color:#111827;
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  line-height:1.5;
+  font-family:Inter, Arial;
+  background:#f5f7fa;
 }
 
-.wrap{max-width:var(--maxw); margin:24px auto; padding:0 20px;}
-
-header.site-header{
-  background:linear-gradient(90deg, rgba(14,36,64,0.98), rgba(25,58,100,0.95));
+header{
+  background:#0b2340;
+  padding:10px 20px;
+}
+.header{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo img{
+  height:50px;
+}
+.menu a{
   color:#fff;
-  border-radius:14px;
-  padding:12px 18px;
-  box-shadow: var(--shadow);
-  position:relative;
-}
-.header-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;max-width:var(--maxw); margin:0 auto;}
-.brand{display:flex;align-items:center;gap:12px}
-.brand-logo img{height:56px; width:auto; display:block; border-radius:8px; background:#000;}
-.brand-title{font-weight:700;font-size:18px;margin:0}
-.brand-sub{font-size:12px;margin:0;color:rgba(255,255,255,0.92)}
-
-/* whatsapp */
-.cta-whatsapp{background:#fff;color:var(--accent-2);padding:8px 12px;border-radius:8px;font-weight:700;text-decoration:none;display:flex;gap:8px;align-items:center}
-.cta-whatsapp img{height:18px}
-
-/* hamburger sempre no canto superior direito */
-.hamburger{
-  position:absolute;
-  top:14px;
-  right:14px;
-  background:transparent;
-  border:0;
-  color:#fff;
-  font-size:28px;
-  cursor:pointer;
-  z-index:999;
+  margin-left:15px;
+  text-decoration:none;
+  font-weight:600;
 }
 
-/* hero com banner de fundo */
-.hero{
-  margin-top:18px;
-  border-radius:12px;
-  height:var(--hero-height);
-  background: url("banners.png") right center / cover no-repeat;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  box-shadow: var(--shadow);
-  overflow:hidden;
-  position:relative;
-}
-.hero-inner{
-  text-align:center;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:10px;
-  padding:18px;
+.banner img{
   width:100%;
-  max-width:980px;
-}
-.hero-title{
-  font-size:44px;
-  font-weight:800;
-  letter-spacing:1px;
-  color:#ffffff;
-  text-transform:uppercase;
-  text-shadow:0 2px 6px rgba(0,0,0,0.6);
-}
-.hero-title .vw{color:var(--red); margin-right:8px}
-
-/* Carousel: imagens padronizadas */
-.carousel-container{
-  position:relative;
-  overflow:hidden;
-  border-radius:12px;
-  box-shadow: var(--shadow);
-  background:var(--surface);
-}
-.carousel-track{
-  display:flex;
-  transition: transform 0.35s ease-in-out;
-  will-change: transform;
-}
-.carousel-item{
-  min-width:100%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.carousel-item img{
-  width:100%;
-  height:300px;
+  height:280px;
   object-fit:cover;
-  border-radius:12px;
-  display:block;
 }
 
-/* Sections */
-.section{margin:36px 0;padding:20px;background:var(--surface);border-radius:12px;box-shadow: var(--shadow)}
-.section h3{margin:0 0 14px 0;color:var(--accent-2);font-size:20px}
-.grid-1{display:grid;grid-template-columns:1fr;gap:12px}
-.card{background:#fff;padding:14px;border-radius:10px;border:1px solid #f0f0f0}
-.card .quote{font-style:italic;margin-bottom:6px;color:#374151}
-.card .who{font-size:14px;color:var(--muted)}
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
 
-/* footer */
-footer.site-footer{margin-top:22px;padding:18px;border-radius:10px;background:#0f172a;color:#e6eef6}
-.footer-inner{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center}
-.small{font-size:13px;color:rgba(230,238,246,0.85)}
+.btn{
+  display:inline-block;
+  background:#25d366;
+  color:#fff;
+  padding:12px 18px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
 
-/* responsive tweaks */
-@media (max-width:900px){
-  .hero-title{font-size:28px}
-  .brand-logo img{height:48px}
+.btn-destaque{
+  display:block;
+  text-align:center;
+  background:#25d366;
+  color:#fff;
+  padding:16px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  animation:pulse 1.2s infinite;
+  margin:30px 0;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.05)}
+  100%{transform:scale(1)}
+}
+
+.section{
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+.card{
+  background:#f9fafb;
+  padding:15px;
+  border-radius:8px;
+}
+
+.gallery{
+  display:flex;
+  overflow-x:auto;
+  gap:10px;
+}
+.gallery img{
+  width:200px;
+  height:150px;
+  object-fit:cover;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+#modal{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.9);
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+#modal img{
+  max-width:90%;
+  max-height:90%;
+  border-radius:10px;
+}
+
+input, textarea{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+
+footer{
+  background:#0b2340;
+  color:#fff;
+  padding:20px;
+}
+footer a{
+  color:#cbd5e1;
+  text-decoration:none;
+}
+
+.whatsapp-float{
+  position:fixed;
+  bottom:80px;
+  right:20px;
+  background:#25d366;
+  color:#fff;
+  padding:12px 16px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 4px 12px rgba(0,0,0,0.3);
 }
 </style>
 </head>
+
 <body>
 
-<header class="site-header" role="banner">
-  <div class="header-inner wrap">
-    <div class="brand">
-      <div class="brand-logo">
-        <img src="logos.png" alt="VW Auto Peças 3 - logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-      </div>
-      <div style="display:block">
-        <div class="brand-title">VW Auto Peças 3</div>
-        <div class="brand-sub">Peças usadas | Revisadas | Garantia</div>
-      </div>
+<header>
+  <div class="header">
+    <div class="logo">
+      <img src="logo.png">
     </div>
 
-    <a class="cta-whatsapp" href="https://wa.me/5565998101050" target="_blank" rel="noopener">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-    </a>
-
-    <button id="hambtn" class="hamburger" aria-expanded="false" aria-controls="mobileMenu" title="Abrir menu">☰</button>
-
-    <nav id="mobileMenu" style="display:none; position:absolute; top:64px; right:14px; background:linear-gradient(180deg,#11253f,#0b2036); padding:10px; border-radius:10px; min-width:180px; z-index:999;">
-      <a href="index.html" style="display:block;color:#fff;padding:8px 10px;text-decoration:none;border-radius:6px">Home</a>
-      <a href="sobre.html" style="display:block;color:#fff;padding:8px 10px;text-decoration:none;border-radius:6px">Sobre</a>
-      <a href="politica.html" style="display:block;color:#fff;padding:8px 10px;text-decoration:none;border-radius:6px">Política</a>
-      <a href="contato.html" style="display:block;color:#fff;padding:8px 10px;text-decoration:none;border-radius:6px">Contato</a>
-    </nav>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </div>
   </div>
 </header>
 
-<main class="wrap" id="main">
-  <!-- HERO com banner.png -->
-  <section class="hero" role="img" aria-label="Banner VW Desmanche">
-    <div class="hero-inner">
-      <div class="hero-title"><span class="vw">VW</span><span class="dm">DESMANCHE</span></div>
-    </div>
-  </section>
+<div class="banner">
+  <img src="baner.png">
+</div>
 
-  <!-- Carousel -->
-  <section class="section" aria-labelledby="carouselTitle">
-    <h3 id="carouselTitle">Nossas Peças em Destaque</h3>
-    <div class="carousel-container">
-      <div class="carousel-track" id="carouselTrack">
-        <div class="carousel-item"><img src="portas.png" alt="Portas - peça"></div>
-        <div class="carousel-item"><img src="capo.png" alt="Capô - peça"></div>
-        <div class="carousel-item"><img src="motor.png" alt="Motor - peça"></div>
-        <div class="carousel-item"><img src="galpão.png" alt="Galpão"></div>
-        <div class="carousel-item"><img src="pneus.png" alt="Pneus - peça"></div>
-        <div class="carousel-item"><img src="carcaca.png" alt="Carcaça - peça"></div>
-      </div>
-    </div>
-  </section>
+<div class="container">
 
-  <!-- Depoimentos -->
-  <section class="section testimonials" aria-labelledby="testTitle">
-    <h3 id="testTitle">Depoimentos</h3>
-    <div class="grid-1" style="margin-top:12px">
-      <div class="card">
-        <div class="quote">“Fornecimento rápido e com garantia — a parceria ideal para nossa oficina.”</div>
-        <div class="who">— Oficina AutoTech</div>
-      </div>
-      <div class="card">
-        <div class="quote">“Atendimento profissional e transparência na procedência das peças.”</div>
-        <div class="who">— Distribuidora JP</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section faq" aria-labelledby="faqTitle">
-    <h3 id="faqTitle">Perguntas Frequentes</h3>
-    <div style="margin-top:12px">
-      <details>
-        <summary>As peças possuem garantia?</summary>
-        <p>Sim — a maioria das peças possui garantia de 30 a 90 dias, conforme descrição do produto.</p>
-      </details>
-      <details>
-        <summary>Vocês emitem nota fiscal?</summary>
-        <p>Sim — emitimos NF para pessoas jurídicas e vendas que requerem nota fiscal eletrônica.</p>
-      </details>
-      <details>
-        <summary>Como é o processo de envio?</summary>
-        <p>Após confirmação, despachamos em 24–72 horas via transportadora parceira; informamos o código de rastreio.</p>
-      </details>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer wrap" role="contentinfo">
-  <div class="footer-inner">
-    <div>
-      <strong>VW Auto Peças 3</strong>
-      <div class="small">CNPJ: 39.697.914/0001-99 • Avenida Jurumirim, 3300 • Novo Horizonte, Cuiabá-MT / SP</div>
-    </div>
-    <div class="small">Contato: (65)998101050• <a href="mailto:vwdesmonte@gmail.com" style="color:#cbd5e1;text-decoration:none">vwdesmonte@gmail.com</a></div>
+  <div class="section">
+    <h2>Peças Automotivas com Garantia</h2>
+    <p>
+Trabalhamos com peças automotivas usadas, cuidadosamente revisadas e testadas, garantindo procedência e qualidade. 
+Contamos com um estoque variado para atender diferentes modelos e necessidades, com envio rápido e seguro para todo o Brasil. 
+Nosso atendimento é ágil e direto, facilitando a sua compra com transparência e confiança.
+</p>
   </div>
-  <div style="margin-top:10px;text-align:center;color:rgba(203,213,225,0.9);font-size:13px">© 2018 VW Auto Peças 3 — Todos os direitos reservados</div>
+
+  <a class="btn-destaque" href="https://wa.me/5565998101050" target="_blank">
+    FALAR AGORA NO WHATSAPP
+  </a>
+
+  <div class="section">
+    <h3>Nossos Serviços</h3>
+    <div class="services">
+      <div class="card">Venda de peças usadas revisadas</div>
+      <div class="card">Motores e câmbios</div>
+      <div class="card">Lataria e acessórios</div>
+      <div class="card">Envio para todo Brasil</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Galeria</h3>
+    <div class="gallery">
+      <img src="img1.png" onclick="abrirImagem(this)">
+      <img src="img2.png" onclick="abrirImagem(this)">
+      <img src="img3.png" onclick="abrirImagem(this)">
+      <img src="img4.png" onclick="abrirImagem(this)">
+      <img src="img5.png" onclick="abrirImagem(this)">
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Avaliações</h3>
+    <p>⭐️⭐️⭐️⭐️⭐️ João Silva - Produto excelente</p>
+    <p>⭐️⭐️⭐️⭐️⭐️ Carlos Mendes - Entrega rápida</p>
+    <p>⭐️⭐️⭐️⭐️⭐️ Pedro Santos - Recomendo</p>
+    <p>⭐️⭐️⭐️⭐️⭐️ Marcos Lima - Ótimo atendimento</p>
+    <p>⭐️⭐️⭐️⭐️⭐️ Rafael Souza - Qualidade top</p>
+  </div>
+
+  <!-- MAPA -->
+  <div class="section">
+    <h3>📍 Nossa Localização</h3>
+
+    <iframe 
+      src="https://www.google.com/maps?q=Avenida+Jurumirim,+3300,+Cuiabá&output=embed"
+      width="100%" 
+      height="300" 
+      style="border:0; border-radius:10px; margin-bottom:15px;" 
+      loading="lazy">
+    </iframe>
+
+    <div style="text-align:center;">
+      <a href="https://www.google.com/maps?q=Avenida+Jurumirim,+3300,+Cuiabá" 
+         target="_blank"
+         style="background:#0b2340;color:#fff;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:bold;">
+        📍 Abrir no Google Maps
+      </a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Solicitar Peça</h3>
+
+<form action="https://formsubmit.co/desmanchevw@gmail.com" method="POST">
+
+  <input type="text" name="nome" placeholder="Nome" required>
+  <input type="tel" name="telefone" placeholder="Telefone" required>
+  <input type="text" name="endereco" placeholder="Endereço">
+  <textarea name="mensagem" placeholder="Qual peça você precisa?" required></textarea>
+
+  <label>
+    <input type="checkbox" required>
+    Aceito os termos e política de privacidade
+  </label>
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="Novo pedido de peça - VW Auto Peças 3">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://vwdesmanche.site">
+
+  <button class="btn">Enviar</button>
+
+  <p style="font-size:13px;color:gray;margin-top:10px;">
+  Seus dados estão seguros e não serão compartilhados.
+  </p>
+
+</form>
+
+  </div>
+
+</div>
+
+<footer>
+  <p><strong>VW Auto Peças 3</strong></p>
+  <p>CNPJ: 39.697.914/0001-99</p>
+  <p>Avenida Jurumirim, 3300 - Cuiabá - MT</p>
+
+  <div style="text-align:left; margin-top:10px; display:flex; gap:15px; flex-wrap:wrap;">
+    <a href="politica.html">Política de Privacidade</a>
+    <a href="termos.html">Termos de Uso</a>
+    <a href="sobre.html">Sobre Nós</a>
+    <a href="cnpj.html">CNPJ</a>
+  </div>
 </footer>
 
+<a class="whatsapp-float" href="https://wa.me/5565998101050" target="_blank">
+  Falar agora
+</a>
+
+<div id="modal" onclick="fecharImagem()">
+  <img id="imgModal">
+</div>
+
 <script>
-(function(){
-  const btn = document.getElementById('hambtn');
-  const menu = document.getElementById('mobileMenu');
-  if(btn && menu){
-    btn.addEventListener('click', () => {
-      const isOpen = menu.style.display === 'flex';
-      menu.style.display = isOpen ? 'none' : 'flex';
-      btn.setAttribute('aria-expanded', String(!isOpen));
-    });
-  }
+function abrirImagem(img){
+  document.getElementById("modal").style.display = "flex";
+  document.getElementById("imgModal").src = img.src;
+}
 
-  const track = document.getElementById('carouselTrack');
-  if(track){
-    let index = 0;
-    const total = track.children.length;
-    function goTo(i){ track.style.transform = `translateX(-${i*100}%)`; }
-    let interval = setInterval(()=>{ index = (index+1) % total; goTo(index); }, 4500);
-
-    let startX = 0;
-    track.addEventListener('touchstart', e => { startX = e.touches[0].clientX; clearInterval(interval); });
-    track.addEventListener('touchend', e => {
-      const endX = e.changedTouches[0].clientX;
-      if(endX - startX > 50) index = (index-1+total) % total;
-      else if(startX - endX > 50) index = (index+1) % total;
-      goTo(index);
-      interval = setInterval(()=>{ index = (index+1) % total; goTo(index); }, 4500);
-    });
-  }
-})();
+function fecharImagem(){
+  document.getElementById("modal").style.display = "none";
+}
 </script>
+
 </body>
 </html>
